@@ -1,0 +1,38 @@
+#Footer {
+    background: #093845;
+    color: white;
+    .container {
+        display: flex;
+        .footerLogo {
+            padding: 3% 0 3%;
+            flex: 35%;
+            h1 {
+                span {
+                    border: 2px solid white;
+                    color: #1DD1A1;
+                }
+            }
+        }
+        .footerNav {
+            flex: 40%;
+            li {
+                text-align: center;
+                a{
+                    color: white;
+                }
+            }
+        }
+        .massMedia {
+            flex: 25%; 
+            display: flex;
+            justify-content: flex-end;
+            div {
+                width: 50%;
+                height: 100%;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+            }
+        }
+    }
+}

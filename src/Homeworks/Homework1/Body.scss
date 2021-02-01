@@ -1,0 +1,102 @@
+#body {
+    padding-top: 3rem;
+    background-color: #E5E5E5;
+    .container  {
+        .bolimlar {
+            display: flex;
+            justify-content: space-around;
+            padding-top: 1rem;
+            width: 50%;
+            text-align: center;
+            background-color: white;
+            .number {
+                font-size: 25px;
+                font-weight: 600;
+            }
+            .number + p {
+                color: red;
+                i {
+                    margin-right: 5px;
+                }
+                span {
+                    font-weight: 500;
+                }
+            }
+        }
+        h3:nth-child(2) {
+            text-align: center;
+            column-rule: #111111;
+            margin: 3rem 0 2rem 0;
+        }
+        #CreateCourse {
+            display: flex;
+            .addCourse {
+                background-color: white;
+                width: 33.3%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 300px;
+                button {
+                    border: none;
+                    background-color: transparent;
+                    font-size: 20px;
+                    &:focus {
+                        outline: none;
+                        border: none;
+                    }
+                }
+            }
+        }
+        .courses {
+            & > div:first-child {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                margin: 3rem 0 1rem;
+                h3 {
+                    text-align: start;
+                    column-rule: #111111;
+                    display: inline-block;
+                }
+                h3 + button {
+                    border: 1px solid #343434;
+                    border-radius: 2px;
+                    background-color: transparent;
+                }
+                h3 + button:focus {
+                    outline: none;
+                }
+            }
+            & > div:nth-child(2) {
+                display: flex;
+                justify-content: space-around;
+                & > div {
+                    & > div {
+                        background-color: white; 
+                        margin: 3%;
+                        padding: 5%; 
+                        button {
+                            border: none;
+                            background: #1DD1A1;
+                            border-radius: 4px;
+                            padding: 2% 5%;
+                            color: white;
+                        }
+                    }  
+                }
+                & > div:first-child > div {
+                    margin-left: 0;
+                }
+                & > div:nth-child(2) > div {
+                    margin-right: 0;
+                    margin-left: 0;
+                }
+                & > div:nth-child(3) > div {
+                    margin-right: 0;
+                }
+            }
+        }
+    }
+}
+

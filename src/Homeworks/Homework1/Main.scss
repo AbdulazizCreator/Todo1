@@ -1,0 +1,136 @@
+.Mainbar {
+    background-color: white;
+    height: 40px;
+    .container {
+        height: 100%;
+    }
+}
+
+.NavbarRow {
+    display: flex;
+    height: 100%;
+}
+
+.NavbarRow > div {
+    height: 100%;
+    button {
+        border: none;
+        background-color: transparent;
+        margin: 0;
+        font-size: 25px;
+        &:focus {
+            border: none;
+            outline: none;
+        }
+    }
+}
+
+ul {
+    margin: 0 !important;
+    padding: 0;
+    display: flex;
+    list-style-type: none;
+    justify-content: space-between;
+    height: 100%;
+    align-items: center;
+    li:first-child a {
+        span:first-child {
+            font-weight: 600;
+            color: #093845;
+            font-size: 20px;
+        }
+        span:first-child + span {
+            border: 2px solid #093845;
+            font-weight: 600;
+            padding: 0 3%;
+            color: #1DD1A1;
+        }
+    }
+    li {
+        flex: 25%;
+    }
+    a {
+        color: black;
+    }
+    a:hover {
+        text-decoration: none;
+    }
+}
+
+.second {
+    display: flex;
+    justify-content: flex-end;
+    .search {
+        border-left: 1px solid#ABABAB;
+        padding:0 3%;
+        color: #ABABAB;
+    }
+    .bell {
+        border-left: 1px solid#ABABAB;
+        border-right: 1px solid#ABABAB;
+        padding: 0 3%;
+        color: #ABABAB;
+    }
+    .search, .bell, .person-more, .person-img {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .person {
+        padding-left: 2%;
+        display: flex;
+        margin-right: 5%;
+        .person-img {
+            flex: 20%;
+            margin-right: 5%;
+            img {
+                height: 30px;
+                border-radius: 50%;
+            }
+        }
+        .person-data {
+            flex: 80%;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            h3 {
+                white-space: nowrap;
+                font-size: 15px;
+                line-height: 1;
+                margin: 0;
+            }
+            p {
+                font-size: 10px;
+                margin: 0;
+                color: #ABABAB;
+            }
+        }
+        .person-more {
+            i::before {
+                color: #ABABAB;
+            }
+        }
+    }
+}
+
+.ButtonNav {
+    position: absolute;
+    top: 40px;
+}
+
+@media screen and (max-width: 576px) {
+    .Mainbar {
+        height: 30px;
+    }
+    .row > div:first-child {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .second {
+        padding-right: 1%;
+        img {
+            height: 20px;
+        }
+    }
+}
